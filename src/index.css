@@ -1,13 +1,34 @@
 :root {
-  --primary: color(255, 255, 255);
+  --primary: rgba(255, 255, 255, 1);
+  --secondary: rgba(179, 179, 179, 1);
+  --background: rgba(6, 4, 18, 1);
+  --accent: rgba(32, 79, 254, 1);
+  --warning: rgba(235, 55, 149, 1);
+
+  --font-title: 'Kanit', sans-serif;
+  --font-body: 'Roboto Mono', monospace;
+
+  --font-size_title-web: 140px;
+  --font-size_title-tab: 112px;
+  --font-size_title-mob: 48px;
+
+  --fon-size_subtitle-web: 24px;
+  --fon-size_subtitle-tab: 20px;
+  --fon-size_subtitle-mob: 18px;
+
+  --font-size_body-web: 18px;
+  --font-size_body-tab: 16px;
+  --font-size_body-mob: 14px;
 }
 
 body {
   margin: 0 auto;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #17191d;
+  color: var(--primary);
+  background-color: var(--background);
+  font-size: var(--font-size_body-web);
 }
 a,
 p,
@@ -37,8 +58,7 @@ img {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 a {
