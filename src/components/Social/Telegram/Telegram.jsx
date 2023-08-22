@@ -1,5 +1,11 @@
+import { TelegramStyled } from './Telegram.styled';
+
 const Telegram = () => {
-  return <div></div>;
+  return (
+    <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer nofollow">
+      <TelegramStyled />
+    </a>
+  );
 };
 
 export default Telegram;
