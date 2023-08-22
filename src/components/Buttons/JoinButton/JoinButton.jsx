@@ -1,4 +1,4 @@
-import { ButtonStyled } from './Button.styled';
+import { ButtonStyled } from '../Button.styled';
 import { SvgStyled } from './JoinButton.styled';
 
 const JoinButton = () => {
