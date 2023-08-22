@@ -1,10 +1,10 @@
 import { ButtonStyled } from './Button.styled';
-import Arrow_tr from '@/images/svg/iconoir_arrow-tr.svg';
+import { SvgStyled } from './JoinButton.styled';
 
 const JoinButton = () => {
   return (
     <ButtonStyled>
-      <img src={Arrow_tr} alt="arrow" />
+      <SvgStyled />
       Join Now
     </ButtonStyled>
   );
