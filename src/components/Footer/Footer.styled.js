@@ -50,6 +50,7 @@ export const FooterContainer = styled.footer`
         }
         &:nth-child(2) {
           padding: 12px 0;
+          margin-bottom: 8px;
         }
         &:nth-child(3) {
           order: 2;
