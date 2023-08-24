@@ -33,7 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary);
   background-color: var(--background);
-  font-size: var(--font-size_body-web);
+
   letter-spacing: calc(var(--font-size_body-web) / -50);
 }
 a,

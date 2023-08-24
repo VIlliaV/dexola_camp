@@ -11,7 +11,7 @@ export const ButtonStyled = styled.button`
   font-family: inherit;
   font-size: var(--font-size_button);
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.32px;
   border: none;
   background-color: var(--button);
