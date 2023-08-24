@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media, size, padding } from '@/styles/media';
+import { media } from '@/styles/media';
 
 export const FooterContainer = styled.footer`
   border-top: 1px solid var(--accent);
@@ -12,7 +12,8 @@ export const FooterContainer = styled.footer`
     padding-bottom: 34px;
 
     @media ${media.tablet} {
-      padding: 28px 0;
+      padding-top: 28px;
+      padding-bottom: 28px;
       grid-template-columns: repeat(2, 1fr);
       ::after {
         content: '';
@@ -27,15 +28,15 @@ export const FooterContainer = styled.footer`
 
     @media ${media.desktop} {
       grid-template-columns: repeat(3, 1fr);
-      padding: 34px 0;
+
       ::after {
-        left: calc((${size.desktop}px - (${padding.desktop}px * 2)) / 3.333);
+        left: 33%;
       }
       ::before {
         content: '';
         position: absolute;
         top: 0;
-        right: calc((${size.desktop}px - (${padding.desktop}px * 2)) / 3.333);
+        right: 33%;
         bottom: 0;
         width: 1px;
         background-color: var(--accent);
@@ -62,7 +63,6 @@ export const FooterContainer = styled.footer`
         }
         &:nth-child(2) {
           grid-row: span 2;
-          padding-left: calc(${padding.tablet}px) * 2;
         }
         &:nth-child(3) {
           justify-self: start;

@@ -5,7 +5,10 @@ import { ReactComponent as Arrow } from '@/images/svg/iconoir_arrow-tr.svg';
 export const HeaderContainer = styled.header`
   position: fixed;
   width: 100vw;
-  padding: 15px 0;
+  padding: 4px 0 13px;
+  @media ${media.tablet} {
+    padding: 15px 0;
+  }
   & .container {
     display: flex;
     justify-content: space-between;
