@@ -1,9 +1,9 @@
-import './AppStyle.styled.js';
-import { Container } from './AppStyle.styled.js';
+import './App.styled.js';
+import { Container } from './App.styled.js';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
 import MainPage from './pages/MainPage.jsx';
-import { GlobalStyles } from './style/GlobalStyles.js';
+import { GlobalStyles } from './styles/GlobalStyles.js';
 
 function App() {
   return (
