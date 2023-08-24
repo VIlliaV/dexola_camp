@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <FooterContainer>
       <HeadContainer>
-        <p className="footer_item_1">Designed by Dexola - 2023</p>
-        <SocialList className="footer_item_2" />
-        <p className="footer_item_3"> © All rights reserved</p>
+        <p className="footer_item">Designed by Dexola - 2023</p>
+        <SocialList className="footer_item" />
+        <p className="footer_item"> © All rights reserved</p>
       </HeadContainer>
     </FooterContainer>
   );
