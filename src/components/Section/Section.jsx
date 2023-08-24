@@ -1,11 +1,12 @@
 import HeadContainer from '../HeadContainer/HeadContainer';
+import { SectionStyled } from './Section.styled';
 
 // eslint-disable-next-line react/prop-types
 const Section = ({ children }) => {
   return (
-    <section>
+    <SectionStyled>
       <HeadContainer>{children}</HeadContainer>
-    </section>
+    </SectionStyled>
   );
 };
 

@@ -6,6 +6,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   width: 100vw;
   padding: 4px 0 13px;
+  background-color: var(--background);
   @media ${media.tablet} {
     padding: 15px 0;
   }
