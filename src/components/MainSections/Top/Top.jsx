@@ -1,7 +1,12 @@
 import Section from '../../Section/Section';
+import ChangeImg from '../../animation/ChangeImg/ChangeImg';
 
-const Top = ({ children }) => {
-  return <Section>TOP{children}</Section>;
+const Top = ({ nftData, children }) => {
+  return (
+    <Section>
+      TOP{children} <ChangeImg nftData={nftData} />
+    </Section>
+  );
 };
 
 export default Top;

@@ -1,27 +1,29 @@
 import { useState, useEffect } from 'react';
-import { ImageSlider } from './ChangeImg.styled';
-import img from '../../../images/NFTs/2.webp';
-import img2 from '../../../images/NFTs/3.webp';
-import img3 from '../../../images/NFTs/4.webp';
 
-const ChangeImg = () => {
-  const [activeImage, setActiveImage] = useState(0);
-  const images = [`${img}`, `${img2}`, `${img3}`];
+import { ImageSlider } from './ChangeImg.styled';
+
+const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
+  const [activeImage, setActiveImage] = useState(initial);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveImage(prevImage => (prevImage + 1) % images.length);
-    }, 3000);
+      setActiveImage(prevImage => (prevImage + step) % nftData.length);
+    }, period);
 
     return () => {
       clearInterval(interval);
     };
-  }, [images.length]);
+  }, [nftData.length, period, step]);
 
   return (
-    <ImageSlider>
-      {images.map((image, index) => (
-        <img key={index} src={image} alt="Image" className={`slider-image ${index === activeImage ? 'active' : ''}`} />
+    <ImageSlider className="image-slider">
+      {nftData.map((item, index) => (
+        <div className="cut-container" key={index}>
+          <picture>
+            <source srcSet={item.src2} media="(-webkit-min-device-pixel-ratio: 2)" />
+            <img src={item.src} alt={item.name} className={`slider-image ${index === activeImage ? 'active' : ''}`} />
+          </picture>
+        </div>
       ))}
     </ImageSlider>
   );
