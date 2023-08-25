@@ -23,7 +23,7 @@ const MainPage = () => {
   }, []);
 
   useEffect(() => {
-    sequenceNumber.current = 1;
+    sequenceNumber.current = 0;
   });
 
   function countSection() {
