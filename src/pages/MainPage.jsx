@@ -22,9 +22,9 @@ const MainPage = () => {
     fetchNFT();
   }, []);
 
-  useEffect(() => {
-    sequenceNumber.current = 0;
-  });
+  // useEffect(() => {
+  //   sequenceNumber.current = 0;
+  // });
 
   function countSection() {
     sequenceNumber.current += 1;
