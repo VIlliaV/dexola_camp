@@ -1,7 +1,7 @@
 import Section from '../../Section/Section';
 
-const Top = () => {
-  return <Section>TOP</Section>;
+const Top = ({ children }) => {
+  return <Section>TOP{children}</Section>;
 };
 
 export default Top;
