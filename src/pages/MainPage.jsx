@@ -33,7 +33,7 @@ const MainPage = () => {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection nftData={nftData} />
       <Features>{countSection()}</Features>
       <Top nftData={nftData}>{countSection()}</Top>
       <Join>{countSection()}</Join>

@@ -3,6 +3,8 @@ import { media } from '@/styles/media';
 import { ReactComponent as Arrow } from '@/images/svg/iconoir_arrow-tr.svg';
 
 export const HeaderContainer = styled.header`
+  /* display: flex;
+  justify-content: center; */
   position: fixed;
   width: 100vw;
   padding: 4px 0 13px;
@@ -14,6 +16,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin: 0 auto; */
   }
 
   & button {

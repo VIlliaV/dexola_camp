@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { media } from '@/styles/media';
 
 export const SectionStyled = styled.section`
+  /* display: flex;
+  justify-content: center; */
   margin-bottom: 41px;
   padding: 24px 0;
   @media ${media.tablet} {
