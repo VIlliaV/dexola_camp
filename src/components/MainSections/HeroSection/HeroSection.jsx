@@ -5,7 +5,7 @@ import { PresentationContainer } from './HeroSection.styled';
 
 const HeroSection = ({ nftData }) => {
   return (
-    <Section customStyle={{ paddingTop: '0px' }}>
+    <Section customStyle={{ padding: '0px', marginBottom: '0px' }}>
       <PresentationContainer>
         <div className="hero_item hero_item_presentation-text">
           <p>

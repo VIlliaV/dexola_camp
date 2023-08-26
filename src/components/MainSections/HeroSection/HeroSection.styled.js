@@ -6,13 +6,16 @@ const HEIGHT_HERO_PRESENTATION = '311px';
 export const PresentationContainer = styled.div`
   display: grid;
   grid-template-rows: ${HEIGHT_HERO_PRESENTATION} auto;
+  padding-bottom: 124px;
 
   @media ${media.tabDesk} {
+    padding-bottom: 134px;
     grid-template-columns: repeat(1, 1fr);
     //  варіант №2
     /* grid-template-rows: calc(${HEIGHT_HERO_PRESENTATION}*2) auto; */
   }
   @media ${media.desktop} {
+    padding-bottom: 176px;
     grid-template-columns: repeat(2, 1fr);
 
     &::after {
@@ -39,6 +42,7 @@ export const PresentationContainer = styled.div`
     &:nth-child(1) {
       order: 2;
     }
+
     @media ${media.desktop} {
       &:nth-child(2) {
         order: 2;
@@ -87,6 +91,7 @@ export const PresentationContainer = styled.div`
     @media ${media.desktop} {
       grid-column: span 2;
       grid-row: 2;
+      margin-top: -16px;
     }
   }
 `;

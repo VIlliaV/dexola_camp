@@ -1,10 +1,12 @@
 import Section from '../../Section/Section';
-import ChangeImg from '../../animation/ChangeImg/ChangeImg';
+import Title from '../../Title/Title';
 
-const Top = ({ nftData, children }) => {
+const Top = ({ nftData, numberSection }) => {
+  console.log('object :>> ', nftData);
+
   return (
     <Section>
-      TOP{children} <ChangeImg nftData={nftData} />
+      <Title numberSection={numberSection}> Top NFTs</Title>
     </Section>
   );
 };

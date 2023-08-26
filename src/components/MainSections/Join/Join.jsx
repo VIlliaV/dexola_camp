@@ -1,7 +1,12 @@
 import Section from '../../Section/Section';
+import Title from '../../Title/Title';
 
-const Join = ({ children }) => {
-  return <Section>Join{children}</Section>;
+const Join = ({ numberSection }) => {
+  return (
+    <Section>
+      <Title numberSection={numberSection}> join us</Title>
+    </Section>
+  );
 };
 
 export default Join;

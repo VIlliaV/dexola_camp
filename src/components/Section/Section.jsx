@@ -1,10 +1,10 @@
 import HeadContainer from '../HeadContainer/HeadContainer';
 import { SectionStyled } from './Section.styled';
 
-const Section = ({ children, customStyle }) => {
+const Section = ({ customStyle, numberSection, children }) => {
   return (
     <SectionStyled style={{ ...customStyle }}>
-      <HeadContainer>{children}</HeadContainer>
+      <HeadContainer numberSection={numberSection}>{children}</HeadContainer>
     </SectionStyled>
   );
 };

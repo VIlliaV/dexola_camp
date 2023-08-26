@@ -1,7 +1,12 @@
 import Section from '../../Section/Section';
+import Title from '../../Title/Title';
 
-const Features = ({ children }) => {
-  return <Section>Features{children}</Section>;
+const Features = ({ numberSection }) => {
+  return (
+    <Section>
+      <Title numberSection={numberSection}> Features</Title>
+    </Section>
+  );
 };
 
 export default Features;
