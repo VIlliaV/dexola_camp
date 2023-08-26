@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const ImageSlider = styled.div`
   position: relative;
   width: 233px;
-  height: 311px;
+  height: 100%;
   overflow: hidden;
-
+  border: 1px solid var(--accent);
   & .cut-container {
     position: absolute;
     left: 50%;

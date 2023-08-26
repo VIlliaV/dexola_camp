@@ -14,6 +14,7 @@ export const ButtonStyle = styled.button`
   border: none;
   background-color: var(--button);
   cursor: pointer;
+  transition: background-color 250ms var(--cubic-bezier);
   &:hover {
     background-color: var(--button_hover);
   }

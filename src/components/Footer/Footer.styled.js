@@ -15,7 +15,7 @@ export const FooterContainer = styled.footer`
       padding-top: 28px;
       padding-bottom: 28px;
       grid-template-columns: repeat(2, 1fr);
-      ::after {
+      &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -29,10 +29,10 @@ export const FooterContainer = styled.footer`
     @media ${media.desktop} {
       grid-template-columns: repeat(3, 1fr);
 
-      ::after {
+      &::after {
         left: 33%;
       }
-      ::before {
+      &::before {
         content: '';
         position: absolute;
         top: 0;
