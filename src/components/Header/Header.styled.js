@@ -26,7 +26,6 @@ export const HeaderContainer = styled.header`
     flex-shrink: 0;
     @media ${media.tablet} {
       width: 235px;
-      height: 48px;
     }
   }
 `;

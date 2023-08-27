@@ -37,10 +37,6 @@ body {
   background-color: var(--background);
 }
 
-p {
-  letter-spacing: calc(var(--font-size_body-web) / -50);
-}
-
 a,
 p,
 h1,

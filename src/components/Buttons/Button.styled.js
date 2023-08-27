@@ -5,12 +5,13 @@ export const ButtonStyle = styled.button`
   justify-content: center;
   align-items: center;
   gap: 6.5px;
+  height: 48px;
   color: var(--primary);
   font-family: inherit;
   font-size: var(--font-size_button);
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   border: none;
   background-color: var(--button);
   cursor: pointer;

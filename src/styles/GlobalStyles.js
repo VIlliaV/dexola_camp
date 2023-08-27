@@ -13,8 +13,9 @@ export const GlobalStyles = createGlobalStyle`
     @media ${media.desktop} {
       font-size: var(--font-size_body-web);
     }
+     letter-spacing: -0.02em;
   }
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     font-family: var(--font-title)
   }
   h1 {
@@ -22,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     line-height: 1.254;
     text-transform: uppercase;
+    letter-spacing: 0;
 
     @media ${media.tablet} {
       font-size: 280px;
@@ -36,17 +38,22 @@ export const GlobalStyles = createGlobalStyle`
   h2 {
      font-size: var(--font-size_title-mob);
     text-transform: capitalize;
+    letter-spacing: 0;
 
     @media ${media.tablet} {
       font-size: var(--font-size_title-tab);
+      
     }
 
     @media ${media.desktop} {
       font-size: var(--font-size_title-web);
+      letter-spacing: -0.02em;
     }
   }
-  h3 {
+  h3,h4 {
      font-size: var(--font-size_subtitle-mob);
+    letter-spacing: 0;
+    line-height: 1.4;
 
     @media ${media.tablet} {
       font-size: var(--font-size_subtitle-tab);
@@ -54,8 +61,19 @@ export const GlobalStyles = createGlobalStyle`
 
     @media ${media.desktop} {
       font-size: var(--font-size_subtitle-web);
+      
     }
   }
 
+  h4 {
+    @media ${media.desktop} {
+      font-size: var(--font-size_subtitle-web);
+      letter-spacing: 0;
+    line-height: 1.4;
+    }
+  }
 
+p {
+  color: var(--secondary);
+}
 `;

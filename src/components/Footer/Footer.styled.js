@@ -28,7 +28,9 @@ export const FooterContainer = styled.footer`
 
     @media ${media.desktop} {
       grid-template-columns: repeat(3, 1fr);
-
+      p {
+        color: var(--primary);
+      }
       &::after {
         left: 33%;
       }

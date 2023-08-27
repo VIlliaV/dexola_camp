@@ -49,6 +49,7 @@ export const PresentationContainer = styled.div`
       }
     }
   }
+
   & .hero_item_slider {
     display: flex;
     justify-content: space-evenly;
@@ -72,7 +73,11 @@ export const PresentationContainer = styled.div`
       }
     }
   }
+
   & .hero_item_presentation-text {
+    & p {
+      color: var(--primary);
+    }
     @media ${media.desktop} {
       display: flex;
       flex-direction: column;
@@ -87,6 +92,7 @@ export const PresentationContainer = styled.div`
       }
     }
   }
+
   & .hero_item_run {
     @media ${media.desktop} {
       grid-column: span 2;

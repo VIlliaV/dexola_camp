@@ -24,7 +24,7 @@ const MainPage = () => {
 
   useEffect(() => {
     sequenceNumber.current = 0;
-  }, [nftData]);
+  });
 
   function countSection() {
     sequenceNumber.current += 1;
