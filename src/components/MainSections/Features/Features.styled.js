@@ -62,6 +62,10 @@ export const AboutItem = styled.li`
   display: flex;
   flex-direction: column;
   border: 1px solid var(--accent);
+
+  & img {
+    width: 100%;
+  }
 `;
 
 export const AboutItemInfo = styled.div`
