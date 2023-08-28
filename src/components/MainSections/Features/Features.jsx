@@ -10,6 +10,7 @@ import astronaut_swim_2x from '@/images/features/astronaut_swim@2x.webp';
 import { About, AboutItemInfo, AboutItem, FeaturesInfo } from './Features.styled';
 import { useEffect, useRef } from 'react';
 import { SvgStyled } from '../../Header/Header.styled';
+import { formatNumberWithLeadingZero } from '@/utils/formating';
 
 const Features = ({ numberSection }) => {
   const sequenceNumber = useRef(0);
@@ -20,7 +21,8 @@ const Features = ({ numberSection }) => {
 
   function countAbout() {
     sequenceNumber.current += 1;
-    return sequenceNumber.current;
+    const number = formatNumberWithLeadingZero(sequenceNumber.current);
+    return number;
   }
 
   return (
