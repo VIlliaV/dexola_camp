@@ -9,10 +9,9 @@ export const PresentationContainer = styled.div`
   padding-bottom: 124px;
 
   @media ${media.tabDesk} {
-    padding-bottom: 134px;
     grid-template-columns: repeat(1, 1fr);
-    //  варіант №2
-    /* grid-template-rows: calc(${HEIGHT_HERO_PRESENTATION}*2) auto; */
+    /* grid-template-rows: auto; */
+    padding-bottom: 134px;
   }
   @media ${media.desktop} {
     padding-bottom: 176px;
@@ -59,15 +58,7 @@ export const PresentationContainer = styled.div`
     }
     & .image-slider {
       width: 50%;
-      @media ${media.tabDesk} {
-        //  варіант №1
-        max-width: 370px;
-        //  варіант №2
-        /* & .cut-container {
-          width: 740px;
-          height: 740px;
-        } */
-      }
+
       @media ${media.desktop} {
         width: 233px;
       }
@@ -94,6 +85,7 @@ export const PresentationContainer = styled.div`
   }
 
   & .hero_item_run {
+    /* margin-top: 100px; */
     @media ${media.desktop} {
       grid-column: span 2;
       grid-row: 2;
