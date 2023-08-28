@@ -22,11 +22,18 @@ export const ImageSlider = styled.div`
     height: 370px;
 
     @media ${media.tabDesk} {
+      top: 0;
       left: 0;
       width: 100%;
       height: auto;
       overflow: hidden;
       border: 1px solid var(--accent);
+    }
+  }
+
+  & .cut-container.active {
+    @media ${media.tabDesk} {
+      position: static;
     }
   }
 
@@ -38,7 +45,6 @@ export const ImageSlider = styled.div`
     transition: opacity 2s ease-in-out;
 
     @media ${media.tabDesk} {
-      /* height: auto; */
       transform: translateX(0);
       margin-bottom: -16%;
     }

@@ -10,7 +10,7 @@ export const PresentationContainer = styled.div`
 
   @media ${media.tabDesk} {
     grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: auto; */
+    grid-template-rows: auto;
     padding-bottom: 134px;
   }
   @media ${media.desktop} {
@@ -85,7 +85,6 @@ export const PresentationContainer = styled.div`
   }
 
   & .hero_item_run {
-    /* margin-top: 100px; */
     @media ${media.desktop} {
       grid-column: span 2;
       grid-row: 2;
