@@ -15,6 +15,7 @@ const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
       clearInterval(interval);
     };
   }, [nftData.length, period, step]);
+  if (nftData.length) console.log('object :>> ', nftData[1]?.src?.tabj);
 
   return (
     <ImageSlider className="image-slider">
@@ -24,9 +25,8 @@ const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
             <source srcSet={`${item.src.desk} 1x, ${item.src.desk2x} 2x`} media={media.desktop} />
             <source srcSet={`${item.src.tab} 1x, ${item.src.desk} 2x`} media={media.tablet} />
             <source srcSet={`${item.src.mob} 1x, ${item.src.tab} 2x`} media={media.mobile} />
-
             <img
-              src={item.src.jpg}
+              src={item.src.tabj}
               alt={item.name}
               className={`slider-image ${index === activeImage ? 'active' : ''}`}
             />
