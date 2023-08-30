@@ -16,8 +16,6 @@ export const ImageSlider = styled.div`
   }
 
   & .cut-container {
-    position: absolute;
-    left: 50%;
     width: 370px;
     height: 370px;
 
@@ -38,9 +36,6 @@ export const ImageSlider = styled.div`
   }
 
   & .slider-image {
-    width: 100%;
-    height: 100%;
-    transform: translateX(-50%);
     opacity: 0;
     transition: opacity 2s ease-in-out;
 
@@ -56,4 +51,15 @@ export const ImageSlider = styled.div`
   /* & .slider-image:not(.active) {
     z-index: -1;
   } */
+`;
+
+export const CutContainer = styled.div`
+  position: absolute;
+  left: 50%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+  }
 `;

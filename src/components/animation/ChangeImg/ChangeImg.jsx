@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { media } from '@/styles/media';
 
-import { ImageSlider } from './ChangeImg.styled';
+import { CutContainer, ImageSlider } from './ChangeImg.styled';
 
 const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
   const [activeImage, setActiveImage] = useState(initial);
@@ -20,7 +20,7 @@ const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
   return (
     <ImageSlider className="image-slider">
       {nftData.map((item, index) => (
-        <div className={`cut-container ${index === activeImage ? 'active' : ''}`} key={index}>
+        <CutContainer className={`cut-container ${index === activeImage ? 'active' : ''}`} key={index}>
           <picture>
             <source srcSet={`${item.src.desk} 1x, ${item.src.desk2x} 2x`} media={media.desktop} />
             <source srcSet={`${item.src.tab} 1x, ${item.src.desk} 2x`} media={media.tablet} />
@@ -31,7 +31,7 @@ const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
               className={`slider-image ${index === activeImage ? 'active' : ''}`}
             />
           </picture>
-        </div>
+        </CutContainer>
       ))}
     </ImageSlider>
   );

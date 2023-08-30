@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Section from '../../Section/Section';
 import Title from '../../Title/Title';
 import { TableStyle } from './Top.styled';
+import { CutContainer } from '../../animation/ChangeImg/ChangeImg.styled';
 
 const Top = ({ nftData, numberSection }) => {
   useEffect(() => {
@@ -26,7 +27,9 @@ const Top = ({ nftData, numberSection }) => {
           {nftData.slice(0, 5).map((item, index) => (
             <tr key={index}>
               <td className="photo">
-                <img src={item.src.mob} alt={item.name !== '' ? item.name : 'character photo'} width="64" />
+                <CutContainer className="cut-container">
+                  <img src={item.src.mob} alt={item.name !== '' ? item.name : 'character photo'} />
+                </CutContainer>
               </td>
               <td>{item.name !== '' ? item.name : 'no name'}</td>
               <td>{item.rarity_level !== '' ? item.rarity_level : 'unknown'}</td>
