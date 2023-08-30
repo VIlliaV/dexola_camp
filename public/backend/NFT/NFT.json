@@ -8,6 +8,11 @@
       "desk": "/images/NFTs/1_desk.webp 2x",
       "desk2x": "/images/NFTs/1_desk2x.webp 2x"
     },
+    "avatar": {
+      "max": "",
+      "min": "",
+      "def": ""
+    },
     "rarity_level": "",
     "total_games": 0,
     "won_games": 0,
@@ -21,6 +26,11 @@
       "tab": "/images/NFTs/2_tab.webp 2x",
       "desk": "/images/NFTs/2_desk.webp 2x",
       "desk2x": "/images/NFTs/2_desk2x.webp 2x"
+    },
+    "avatar": {
+      "max": "/images/NFTs/avatar/2@2x.webp",
+      "min": "/images/NFTs/avatar/2.webp",
+      "def": "/images/NFTs/avatar/2.png"
     },
     "rarity_level": "Heroic",
     "total_games": 87,
@@ -36,6 +46,11 @@
       "desk": "/images/NFTs/3_desk.webp 2x",
       "desk2x": "/images/NFTs/3_desk2x.webp 2x"
     },
+    "avatar": {
+      "max": "/images/NFTs/avatar/3@2x.webp",
+      "min": "/images/NFTs/avatar/3.webp",
+      "def": "/images/NFTs/avatar/3.png"
+    },
     "rarity_level": "Rare",
     "total_games": 134,
     "won_games": 100,
@@ -49,6 +64,11 @@
       "tab": "/images/NFTs/4_tab.webp 2x",
       "desk": "/images/NFTs/4_desk.webp 2x",
       "desk2x": "/images/NFTs/4_desk2x.webp 2x"
+    },
+    "avatar": {
+      "max": "",
+      "min": "",
+      "def": ""
     },
     "rarity_level": "",
     "total_games": 0,
@@ -64,6 +84,11 @@
       "desk": "/images/NFTs/5_desk.webp 2x",
       "desk2x": "/images/NFTs/5_desk2x.webp 2x"
     },
+    "avatar": {
+      "max": "/images/NFTs/avatar/5@2x.webp",
+      "min": "/images/NFTs/avatar/5.webp",
+      "def": "/images/NFTs/avatar/5.png"
+    },
     "rarity_level": "Common",
     "total_games": 133,
     "won_games": 43,
@@ -77,6 +102,11 @@
       "tab": "/images/NFTs/6_tab.webp 2x",
       "desk": "/images/NFTs/6_desk.webp 2x",
       "desk2x": "/images/NFTs/6_desk2x.webp 2x"
+    },
+    "avatar": {
+      "max": "",
+      "min": "",
+      "def": ""
     },
     "rarity_level": "",
     "total_games": 0,
@@ -92,6 +122,11 @@
       "desk": "/images/NFTs/7_desk.webp 2x",
       "desk2x": "/images/NFTs/7_desk2x.webp 2x"
     },
+    "avatar": {
+      "max": "/images/NFTs/avatar/7@2x.webp",
+      "min": "/images/NFTs/avatar/7.webp",
+      "def": "/images/NFTs/avatar/7.png"
+    },
     "rarity_level": "Epic",
     "total_games": 56,
     "won_games": 15,
@@ -105,6 +140,11 @@
       "tab": "/images/NFTs/8_tab.webp 2x",
       "desk": "/images/NFTs/8_desk.webp 2x",
       "desk2x": "/images/NFTs/8_desk2x.webp 2x"
+    },
+    "avatar": {
+      "max": "",
+      "min": "",
+      "def": ""
     },
     "rarity_level": "",
     "total_games": 0,
@@ -120,6 +160,11 @@
       "desk": "/images/NFTs/9_desk.webp 2x",
       "desk2x": "/images/NFTs/9_desk2x.webp 2x"
     },
+    "avatar": {
+      "max": "",
+      "min": "",
+      "def": ""
+    },
     "rarity_level": "",
     "total_games": 0,
     "won_games": 0,
@@ -133,6 +178,11 @@
       "tab": "/images/NFTs/10_tab.webp 2x",
       "desk": "/images/NFTs/10_desk.webp 2x",
       "desk2x": "/images/NFTs/10_desk2x.webp 2x"
+    },
+    "avatar": {
+      "max": "/images/NFTs/avatar/10@2x.webp",
+      "min": "/images/NFTs/avatar/10.webp",
+      "def": "/images/NFTs/avatar/10.png"
     },
     "rarity_level": "Legendary",
     "total_games": 189,

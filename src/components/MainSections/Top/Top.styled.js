@@ -1,25 +1,28 @@
 import styled from 'styled-components';
+import { media } from '@/styles/media';
 
 export const TableStyle = styled.table`
-  width: 100%;
+  @media ${media.mobTab} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 
-  border-collapse: collapse; /* Об'єднуємо межі таблиці */
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  border-collapse: collapse;
   & tr {
     border-bottom: 1px solid var(--accent);
   }
   & .photo {
-    position: relative;
     padding: 0;
     min-width: 64px;
-    width: 64px;
+    color: transparent;
     overflow: hidden;
-    & .cut-container {
-      top: 0;
-      width: 199.5px;
-      height: 199.5px;
-      & img {
-        /* transform: translate(-50%, -50%); */
-      }
+    & img {
+      font-size: 8px;
+      border-radius: 60px;
     }
   }
   & th {
@@ -35,6 +38,7 @@ export const TableStyle = styled.table`
       min-width: 180px;
     }
   }
+
   & tbody {
     & tr {
       &:nth-child(2n + 1) {
@@ -42,8 +46,7 @@ export const TableStyle = styled.table`
       }
     }
   }
-
   & td {
-    padding: 11px 24px;
+    padding: 28px 24px;
   }
 `;

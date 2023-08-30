@@ -22,9 +22,9 @@ Use a better box model (opinionated).
 */
 
 html {
-  line-height: 1;
+  line-height: 1.5;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 150%;
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
