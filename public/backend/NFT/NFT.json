@@ -8,13 +8,13 @@
       "desk": "/images/NFTs/1_desk.webp 2x",
       "desk2x": "/images/NFTs/1_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "",
+    "total_games": 0,
+    "won_games": 0,
+    "price": 0
   },
   {
-    "name": "",
+    "name": "Common Potion",
     "src": {
       "tabj": "/images/NFTs/2.jpg",
       "mob": "/images/NFTs/2_mob.webp",
@@ -22,13 +22,13 @@
       "desk": "/images/NFTs/2_desk.webp 2x",
       "desk2x": "/images/NFTs/2_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "Heroic",
+    "total_games": 87,
+    "won_games": 23,
+    "price": 2.8
   },
   {
-    "name": "",
+    "name": "Epic Warrior",
     "src": {
       "tabj": "/images/NFTs/3.jpg",
       "mob": "/images/NFTs/3_mob.webp",
@@ -36,10 +36,10 @@
       "desk": "/images/NFTs/3_desk.webp 2x",
       "desk2x": "/images/NFTs/3_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "Rare",
+    "total_games": 134,
+    "won_games": 100,
+    "price": 1.5
   },
   {
     "name": "",
@@ -50,13 +50,13 @@
       "desk": "/images/NFTs/4_desk.webp 2x",
       "desk2x": "/images/NFTs/4_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "",
+    "total_games": 0,
+    "won_games": 0,
+    "price": 0
   },
   {
-    "name": "",
+    "name": "Mystic Spellbook",
     "src": {
       "tabj": "/images/NFTs/5.jpg",
       "mob": "/images/NFTs/5_mob.webp",
@@ -64,10 +64,10 @@
       "desk": "/images/NFTs/5_desk.webp 2x",
       "desk2x": "/images/NFTs/5_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "Common",
+    "total_games": 133,
+    "won_games": 43,
+    "price": 1.2
   },
   {
     "name": "",
@@ -78,13 +78,13 @@
       "desk": "/images/NFTs/6_desk.webp 2x",
       "desk2x": "/images/NFTs/6_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "",
+    "total_games": 0,
+    "won_games": 0,
+    "price": 0
   },
   {
-    "name": "",
+    "name": "Heroic Blade",
     "src": {
       "tabj": "/images/NFTs/7.jpg",
       "mob": "/images/NFTs/7_mob.webp",
@@ -92,10 +92,10 @@
       "desk": "/images/NFTs/7_desk.webp 2x",
       "desk2x": "/images/NFTs/7_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "Epic",
+    "total_games": 56,
+    "won_games": 15,
+    "price": 0.5
   },
   {
     "name": "",
@@ -106,10 +106,10 @@
       "desk": "/images/NFTs/8_desk.webp 2x",
       "desk2x": "/images/NFTs/8_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "",
+    "total_games": 0,
+    "won_games": 0,
+    "price": 0
   },
   {
     "name": "",
@@ -120,13 +120,13 @@
       "desk": "/images/NFTs/9_desk.webp 2x",
       "desk2x": "/images/NFTs/9_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "",
+    "total_games": 0,
+    "won_games": 0,
+    "price": 0
   },
   {
-    "name": "",
+    "name": "Legendary Artifact",
     "src": {
       "tabj": "/images/NFTs/10.jpg",
       "mob": "/images/NFTs/10_mob.webp",
@@ -134,9 +134,9 @@
       "desk": "/images/NFTs/10_desk.webp 2x",
       "desk2x": "/images/NFTs/10_desk2x.webp 2x"
     },
-    "rarity_level": 1,
-    "total_games": 1,
-    "won_games": 1,
-    "price": 1
+    "rarity_level": "Legendary",
+    "total_games": 189,
+    "won_games": 125,
+    "price": 2.5
   }
 ]

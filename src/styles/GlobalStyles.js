@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     }
      letter-spacing: -0.02em;
   }
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4,th {
     font-family: var(--font-title)
   }
   h1 {
@@ -50,10 +50,11 @@ export const GlobalStyles = createGlobalStyle`
       letter-spacing: -0.02em;
     }
   }
-  h3,h4 {
+  h3,h4,th {
      font-size: var(--font-size_subtitle-mob);
-    letter-spacing: 0;
-    line-height: 1.4;
+     font-weight: 500;
+    letter-spacing:-0.02em ;
+   
 
     @media ${media.tablet} {
       font-size: var(--font-size_subtitle-tab);
