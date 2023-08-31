@@ -4,9 +4,9 @@
     "src": {
       "tabj": "/images/NFTs/1.jpg",
       "mob": "/images/NFTs/1_mob.webp",
-      "tab": "/images/NFTs/1_tab.webp 2x",
-      "desk": "/images/NFTs/1_desk.webp 2x",
-      "desk2x": "/images/NFTs/1_desk2x.webp 2x"
+      "tab": "/images/NFTs/1_tab.webp",
+      "desk": "/images/NFTs/1_desk.webp",
+      "desk2x": "/images/NFTs/1_desk2x.webp"
     },
     "avatar": {
       "max": "",
@@ -23,9 +23,9 @@
     "src": {
       "tabj": "/images/NFTs/2.jpg",
       "mob": "/images/NFTs/2_mob.webp",
-      "tab": "/images/NFTs/2_tab.webp 2x",
-      "desk": "/images/NFTs/2_desk.webp 2x",
-      "desk2x": "/images/NFTs/2_desk2x.webp 2x"
+      "tab": "/images/NFTs/2_tab.webp",
+      "desk": "/images/NFTs/2_desk.webp",
+      "desk2x": "/images/NFTs/2_desk2x.webp"
     },
     "avatar": {
       "max": "/images/NFTs/avatar/2@2x.webp",
@@ -42,9 +42,9 @@
     "src": {
       "tabj": "/images/NFTs/3.jpg",
       "mob": "/images/NFTs/3_mob.webp",
-      "tab": "/images/NFTs/3_tab.webp 2x",
-      "desk": "/images/NFTs/3_desk.webp 2x",
-      "desk2x": "/images/NFTs/3_desk2x.webp 2x"
+      "tab": "/images/NFTs/3_tab.webp",
+      "desk": "/images/NFTs/3_desk.webp",
+      "desk2x": "/images/NFTs/3_desk2x.webp"
     },
     "avatar": {
       "max": "/images/NFTs/avatar/3@2x.webp",
@@ -61,9 +61,9 @@
     "src": {
       "tabj": "/images/NFTs/4.jpg",
       "mob": "/images/NFTs/4_mob.webp",
-      "tab": "/images/NFTs/4_tab.webp 2x",
-      "desk": "/images/NFTs/4_desk.webp 2x",
-      "desk2x": "/images/NFTs/4_desk2x.webp 2x"
+      "tab": "/images/NFTs/4_tab.webp",
+      "desk": "/images/NFTs/4_desk.webp",
+      "desk2x": "/images/NFTs/4_desk2x.webp"
     },
     "avatar": {
       "max": "",
@@ -80,9 +80,9 @@
     "src": {
       "tabj": "/images/NFTs/5.jpg",
       "mob": "/images/NFTs/5_mob.webp",
-      "tab": "/images/NFTs/5_tab.webp 2x",
-      "desk": "/images/NFTs/5_desk.webp 2x",
-      "desk2x": "/images/NFTs/5_desk2x.webp 2x"
+      "tab": "/images/NFTs/5_tab.webp",
+      "desk": "/images/NFTs/5_desk.webp",
+      "desk2x": "/images/NFTs/5_desk2x.webp"
     },
     "avatar": {
       "max": "/images/NFTs/avatar/5@2x.webp",
@@ -99,9 +99,9 @@
     "src": {
       "tabj": "/images/NFTs/6.jpg",
       "mob": "/images/NFTs/6_mob.webp",
-      "tab": "/images/NFTs/6_tab.webp 2x",
-      "desk": "/images/NFTs/6_desk.webp 2x",
-      "desk2x": "/images/NFTs/6_desk2x.webp 2x"
+      "tab": "/images/NFTs/6_tab.webp",
+      "desk": "/images/NFTs/6_desk.webp",
+      "desk2x": "/images/NFTs/6_desk2x.webp"
     },
     "avatar": {
       "max": "",
@@ -118,9 +118,9 @@
     "src": {
       "tabj": "/images/NFTs/7.jpg",
       "mob": "/images/NFTs/7_mob.webp",
-      "tab": "/images/NFTs/7_tab.webp 2x",
-      "desk": "/images/NFTs/7_desk.webp 2x",
-      "desk2x": "/images/NFTs/7_desk2x.webp 2x"
+      "tab": "/images/NFTs/7_tab.webp",
+      "desk": "/images/NFTs/7_desk.webp",
+      "desk2x": "/images/NFTs/7_desk2x.webp"
     },
     "avatar": {
       "max": "/images/NFTs/avatar/7@2x.webp",
@@ -137,9 +137,9 @@
     "src": {
       "tabj": "/images/NFTs/8.jpg",
       "mob": "/images/NFTs/8_mob.webp",
-      "tab": "/images/NFTs/8_tab.webp 2x",
-      "desk": "/images/NFTs/8_desk.webp 2x",
-      "desk2x": "/images/NFTs/8_desk2x.webp 2x"
+      "tab": "/images/NFTs/8_tab.webp",
+      "desk": "/images/NFTs/8_desk.webp",
+      "desk2x": "/images/NFTs/8_desk2x.webp"
     },
     "avatar": {
       "max": "",
@@ -156,9 +156,9 @@
     "src": {
       "tabj": "/images/NFTs/9.jpg",
       "mob": "/images/NFTs/9_mob.webp",
-      "tab": "/images/NFTs/9_tab.webp 2x",
-      "desk": "/images/NFTs/9_desk.webp 2x",
-      "desk2x": "/images/NFTs/9_desk2x.webp 2x"
+      "tab": "/images/NFTs/9_tab.webp",
+      "desk": "/images/NFTs/9_desk.webp",
+      "desk2x": "/images/NFTs/9_desk2x.webp"
     },
     "avatar": {
       "max": "",
@@ -175,9 +175,9 @@
     "src": {
       "tabj": "/images/NFTs/10.jpg",
       "mob": "/images/NFTs/10_mob.webp",
-      "tab": "/images/NFTs/10_tab.webp 2x",
-      "desk": "/images/NFTs/10_desk.webp 2x",
-      "desk2x": "/images/NFTs/10_desk2x.webp 2x"
+      "tab": "/images/NFTs/10_tab.webp",
+      "desk": "/images/NFTs/10_desk.webp",
+      "desk2x": "/images/NFTs/10_desk2x.webp"
     },
     "avatar": {
       "max": "/images/NFTs/avatar/10@2x.webp",
