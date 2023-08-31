@@ -34,9 +34,9 @@ const MainPage = () => {
   return (
     <>
       <HeroSection nftData={nftData} />
-      <Features numberSection={countSection()}></Features>
+      {/* <Features numberSection={countSection()}></Features>
       <Top nftData={nftData} numberSection={countSection()}></Top>
-      <Join numberSection={countSection()}></Join>
+      <Join numberSection={countSection()}></Join> */}
     </>
   );
 };
