@@ -10,6 +10,8 @@ const Top = ({ nftData, numberSection }) => {
     if (!nftData.length) return;
   }, [nftData]);
 
+  const sortedItems = nftData.slice().sort((a, b) => b.total_games - a.total_games);
+
   return (
     <Section>
       <Title numberSection={numberSection}> Top NFTs</Title>
@@ -24,21 +26,8 @@ const Top = ({ nftData, numberSection }) => {
             <th>Price (ETH)</th>
           </tr>
         </thead>
-        {/* <div className="s1">
-          <div className="element">element 1</div>
-          <div className="element">element 2</div>
-          <div className="element">element 3</div>
-        </div>
-        <div className="s2">
-          <div className="element">element 4</div>
-          <div className="element">element 5</div>
-          <div className="element">element 6</div>
-        </div>
-        <div className="s3">container 3</div>
-        <div className="s4">container 4</div>
-        <div className="s5">container 5</div> */}
         <tbody>
-          {nftData.slice(0, 5).map((item, index) => (
+          {sortedItems.slice(0, 5).map((item, index) => (
             <tr key={index}>
               <td className="photo">
                 <picture>
@@ -53,10 +42,30 @@ const Top = ({ nftData, numberSection }) => {
               </td>
 
               <td>{item.name || 'no name'}</td>
-              <td>{item.rarity_level || 'unknown'}</td>
-              <td>{item.total_games}</td>
-              <td>{item.won_games}</td>
-              <td>{item.price}</td>
+              <td>
+                <span className="no_aria" aria-hidden="true">
+                  Rarity:{' '}
+                </span>
+                {item.rarity_level || 'unknown'}
+              </td>
+              <td>
+                <span className="no_aria" aria-hidden="true">
+                  Total games:{' '}
+                </span>
+                {item.total_games}
+              </td>
+              <td>
+                <span className="no_aria" aria-hidden="true">
+                  Games Won:{' '}
+                </span>
+                {item.won_games}
+              </td>
+              <td>
+                {item.price}{' '}
+                <span className="no_aria" aria-hidden="true">
+                  ETH
+                </span>
+              </td>
             </tr>
           ))}
         </tbody>
