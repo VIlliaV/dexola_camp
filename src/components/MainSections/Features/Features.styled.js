@@ -104,6 +104,7 @@ export const AboutItemInfo = styled.div`
     }
   }
   & button {
+    padding: 12px 0;
     margin-top: 8px;
     text-transform: uppercase;
     @media ${media.tablet} {

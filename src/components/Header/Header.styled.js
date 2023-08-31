@@ -21,11 +21,8 @@ export const HeaderContainer = styled.header`
   }
 
   & button {
-    width: 136px;
-    height: 40px;
-    flex-shrink: 0;
-    @media ${media.tablet} {
-      width: 235px;
+    @media ${media.mobTab} {
+      padding: 10px 16px;
     }
   }
 `;

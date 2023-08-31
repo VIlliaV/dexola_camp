@@ -51,6 +51,7 @@ const Top = ({ nftData, numberSection }) => {
                   />
                 </picture>
               </td>
+
               <td>{item.name || 'no name'}</td>
               <td>{item.rarity_level || 'unknown'}</td>
               <td>{item.total_games}</td>
