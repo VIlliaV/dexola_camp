@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { media } from '@/styles/media';
 
 export const TableStyle = styled.table`
-  @media ${media.mobTab} {
+  /* @media ${media.mobTab} {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-  }
+  } */
 
   width: 100%;
   border-collapse: separate;
