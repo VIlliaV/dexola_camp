@@ -30,7 +30,7 @@
 body {
   position: relative;
   margin: 0 auto;
-
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary);
