@@ -1,6 +1,6 @@
 :root {
   --primary: rgba(255, 255, 255, 1);
-  --secondary: rgba(179, 179, 179, 1);
+  --placeholder: rgb(179, 179, 179);
   --background: rgba(6, 4, 18, 1);
   --accent: rgb(32, 79, 254);
   --warning: rgba(235, 55, 149, 1);
@@ -30,7 +30,7 @@
 body {
   position: relative;
   margin: 0 auto;
-  font-display: swap;
+  /* font-display: swap; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary);

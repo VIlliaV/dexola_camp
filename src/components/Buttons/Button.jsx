@@ -1,7 +1,7 @@
 import { ButtonStyle } from './Button.styled';
 
-const Button = ({ children }) => {
-  return <ButtonStyle>{children}</ButtonStyle>;
+const Button = ({ typeButton = 'button', children }) => {
+  return <ButtonStyle type={typeButton}>{children}</ButtonStyle>;
 };
 
 export default Button;

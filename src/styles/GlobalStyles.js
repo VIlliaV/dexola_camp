@@ -74,10 +74,14 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-p {
+  p {
   color: var(--secondary);
-}
+  }
 
+  input {
+    line-height: 1.333333; 
+    letter-spacing: 0.02em;
+  }
 
 
 
