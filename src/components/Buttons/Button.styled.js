@@ -13,6 +13,7 @@ export const ButtonStyle = styled.button`
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  white-space: nowrap;
   border: none;
   background-color: var(--button);
   cursor: pointer;
