@@ -19,9 +19,12 @@ export const JoinContainer = styled.div`
     flex: 0 0 50%;
   }
 
-  & button {
+  & .submit_button {
     width: 100%;
     gap: 11.23px;
+    &:disabled {
+      cursor: not-allowed;
+    }
     @media ${media.tablet} {
       width: 235px;
     }

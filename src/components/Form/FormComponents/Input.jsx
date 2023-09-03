@@ -1,19 +1,32 @@
 import { useMemo, useState } from 'react';
 // import ErrorMessage from './ErrorMessage';
-import { InputStyled } from './Input.styled';
+import { ContainerInput, Eye, InputStyled, SvgStyledEyeClose, SvgStyledEyeOpen } from './Input.styled';
 import { TYPE_INPUT } from '../../../constants/constants';
+import InputPhone from './InputPhone';
 
-const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false }) => {
+const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, setUserData, userPassword = '' }) => {
+  console.log('🚀 ~ userPassword:', userPassword);
   const [inputValue, setInputValue] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = event => {
     const value = event.target.value;
     setInputValue(value);
+
     handleErrorMessage('');
   };
 
   const handleBlur = () => {
     if (!inputValue.trim()) handleErrorMessage('Please complete this field');
+    setUserData(typeInput, inputValue);
+    if (typeInput === TYPE_INPUT.confirmPassword && userPassword !== inputValue) {
+      handleErrorMessage('wrong confirmation password');
+      setUserData(typeInput, '');
+    }
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   const placeholderInput = useMemo(() => {
@@ -31,15 +44,37 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false }
     }
   }, [typeInput]);
 
-  return (
-    <InputStyled
-      type={typeInput === TYPE_INPUT.confirmPassword ? TYPE_INPUT.password : typeInput}
-      name={typeInput}
-      placeholder={placeholderInput}
-      required={requiredInput}
-      value={inputValue}
-      onChange={handleChange}
-      onBlur={handleBlur}
+  const isPasswordInput =
+    typeInput !== TYPE_INPUT.confirmPassword && typeInput !== TYPE_INPUT.password
+      ? typeInput
+      : showPassword === false
+      ? TYPE_INPUT.password
+      : 'text';
+
+  return typeInput !== TYPE_INPUT.tel ? (
+    <ContainerInput>
+      <InputStyled
+        type={isPasswordInput}
+        name={typeInput}
+        placeholder={placeholderInput}
+        required={requiredInput}
+        value={inputValue}
+        onChange={handleChange}
+        onBlur={handleBlur}
+      />
+      {(typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && (
+        <Eye type="button" onClick={togglePasswordVisibility}>
+          {!showPassword ? <SvgStyledEyeClose /> : <SvgStyledEyeOpen />}
+        </Eye>
+      )}
+    </ContainerInput>
+  ) : (
+    <InputPhone
+      placeholderInput={placeholderInput}
+      typeInput={typeInput}
+      requiredInput={requiredInput}
+      handleErrorMessage={handleErrorMessage}
+      setUserData={setUserData}
     />
   );
 };

@@ -1,24 +1,29 @@
 import styled from 'styled-components';
-import { media } from '@/styles/media';
+import { input } from '@/styles/styledConst';
+
+import { ReactComponent as Eye_closed } from '@/images/svg/ph_eye-closed.svg';
+import { ReactComponent as Eye_opened } from '@/images/svg/ph_eye.svg';
+
+export const ContainerInput = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 export const InputStyled = styled.input`
-  width: 100%;
-  padding: 8px 0px 11px 30px;
-  margin-bottom: 4px;
-  color: var(--primary);
+  ${input}
+`;
+
+export const SvgStyledEyeClose = styled(Eye_closed)`
+  fill: var(--primary);
+`;
+export const SvgStyledEyeOpen = styled(Eye_opened)`
+  fill: var(--primary);
+`;
+
+export const Eye = styled.button`
+  width: 24px;
+  height: 24px;
   background-color: transparent;
   border: none;
-  letter-spacing: -0.02em;
-  line-height: normal;
-  &::placeholder {
-    color: var(--secondary);
-  }
-  &:focus {
-    outline: none;
-  }
-  @media ${media.desktop} {
-    padding: 8px 0px 8px 30px;
-    letter-spacing: 0.02em;
-    line-height: 1.333333;
-  }
+  cursor: pointer;
 `;
