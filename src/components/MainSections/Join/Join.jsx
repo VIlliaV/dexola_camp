@@ -11,6 +11,7 @@ import { validateData } from '../../../utils/validation';
 
 const Join = ({ numberSection }) => {
   const [userData, setUserData] = useState({});
+  // console.log('🚀 ~ userData:', userData);
 
   const handleSubmit = event => {
     event.preventDefault();

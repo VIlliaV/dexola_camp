@@ -6,7 +6,6 @@ import { validateEmailData } from '../../../utils/validation';
 
 const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, setUserData, userPassword = '' }) => {
   const [inputValue, setInputValue] = useState('');
-
   const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = event => {
@@ -16,27 +15,28 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
     handleErrorMessage('');
   };
 
-  const handleBlur = () => {
+  const handleBlur = event => {
+    setUserData(typeInput, inputValue);
+    const value = event.target.value;
+
     if (!inputValue.trim()) {
       handleErrorMessage('Please complete this field');
       return;
     }
-    setUserData(typeInput, inputValue);
-    if (typeInput === TYPE_INPUT.confirmPassword && userPassword !== inputValue) {
-      handleErrorMessage('Passwords must match');
-      setUserData(typeInput, '');
-    }
-    if ((typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && inputValue.length < 3) {
+    if (typeInput === TYPE_INPUT.confirmPassword && userPassword !== value) handleErrorMessage('Passwords must match');
+
+    if ((typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && value.length < 3) {
       handleErrorMessage('Password must be at least 3 characters');
-      setUserData(typeInput, '');
     }
     if (typeInput === TYPE_INPUT.email) {
-      const { error } = validateEmailData(inputValue);
-      if (error) {
-        handleErrorMessage(error.message);
-        setUserData(typeInput, '');
-      }
+      const { error } = validateEmailData(value);
+      if (error) handleErrorMessage(error.message);
     }
+  };
+
+  const handleFocus = event => {
+    const value = event.target.value;
+    if (typeInput === TYPE_INPUT.confirmPassword && userPassword === value) handleErrorMessage('');
   };
 
   const togglePasswordVisibility = () => {
@@ -75,6 +75,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
         value={inputValue}
         onChange={handleChange}
         onBlur={handleBlur}
+        onFocus={handleFocus}
       />
       {(typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && (
         <Eye type="button" onClick={togglePasswordVisibility}>
