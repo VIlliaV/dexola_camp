@@ -1,4 +1,3 @@
-// import { useState } from 'react';
 import { useMemo, useState } from 'react';
 import { TYPE_INPUT } from '../../../constants/constants';
 import Button from '../../Buttons/Button';
@@ -7,20 +6,28 @@ import Label from '../../Form/FormComponents/Label';
 import Section from '../../Section/Section';
 import Title from '../../Title/Title';
 import { JoinContainer, JoinDescriptionStyled, SvgStyled, SvgStyledLine } from './Join.styled';
+import { toast } from 'react-hot-toast';
+import { validateData } from '../../../utils/validation';
 
 const Join = ({ numberSection }) => {
   const [userData, setUserData] = useState({});
 
+  // const isValid = useMemo(() => {
+  //   if (Object.keys(userData).length === 0) return true;
+  //   return Object.values(userData).some(value => value === '');
+  // }, [userData]);
+
   const handleSubmit = event => {
+    // console.log('🚀 ~ event:', event);
     event.preventDefault();
+    const { error } = validateData(userData);
+    // console.table('🚀 ~ event:', event.target.form);
+    const form = event.target.form;
+    console.log('🚀 ~ form:', event);
 
-    console.log(userData);
+    !error ? toast.success(userData['email']) : toast.error(error.message);
+    // console.log('object :>> ', userData);
   };
-
-  const isValid = useMemo(() => {
-    if (Object.keys(userData).length === 0) return true;
-    return Object.values(userData).some(value => value === '');
-  }, [userData]);
 
   const takeDataFromLabel = (name, value) => {
     setUserData({
@@ -51,7 +58,7 @@ const Join = ({ numberSection }) => {
             setUserData={takeDataFromLabel}
             userPassword={userData[TYPE_INPUT.password]}
           />
-          <Button typeButton="submit" className="submit_button" disabled={isValid}>
+          <Button typeButton="submit" className="submit_button">
             <SvgStyledLine />
             SEND IT
           </Button>

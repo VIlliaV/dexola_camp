@@ -12,7 +12,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
   const handleChange = event => {
     const value = event.target.value;
     setInputValue(value);
-
+    setUserData(typeInput, value);
     handleErrorMessage('');
   };
 
@@ -61,6 +61,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
         value={inputValue}
         onChange={handleChange}
         onBlur={handleBlur}
+        autoComplete="off"
       />
       {(typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && (
         <Eye type="button" onClick={togglePasswordVisibility}>
