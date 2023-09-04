@@ -17,7 +17,9 @@ const Join = ({ numberSection }) => {
     event.preventDefault();
     const { error } = validateData(userData);
 
-    !error ? toast.success(`Enjoy ${userData[email]}`) : toast.error(error.message);
+    !error
+      ? toast.success(`Enjoy ${userData[email]} your number: ${userData[tel]} and password : ${userData[password]}`)
+      : toast.error(error.message);
     if (!error) {
       setUserData({});
     }
