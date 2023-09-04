@@ -32,12 +32,7 @@ const Top = ({ nftData, numberSection }) => {
               <td className="photo">
                 <picture>
                   <source srcSet={`${item.avatar.min || noAvatar64} 1x, ${item.avatar.max || noAvatar128} 2x`} />
-                  <img
-                    src={item.avatar.def || noAvatar}
-                    // srcSet={`/images/NFTs/avatar/no_avatar.png 1x, /images/NFTs/avatar/5.png 2x`}
-                    alt={item.name || 'character avatar'}
-                    width="64"
-                  />
+                  <img src={item.avatar.def || noAvatar} alt={item.name || 'character avatar'} width="64" />
                 </picture>
               </td>
 
