@@ -1,9 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { InputPhoneStyled } from './InputPhone.styled';
 import { isValidPhoneNumber } from 'react-phone-number-input';
 
-const InputPhone = ({ placeholderInput, requiredInput = false, typeInput, handleErrorMessage, setUserData }) => {
+const InputPhone = ({
+  placeholderInput,
+  requiredInput = false,
+  typeInput,
+  handleErrorMessage,
+  setUserData,
+  userInfo = {},
+}) => {
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    if (Object.keys(userInfo).length === 0) {
+      setInputValue('');
+    }
+  }, [userInfo]);
 
   const handleChange = tel => {
     setInputValue(tel);

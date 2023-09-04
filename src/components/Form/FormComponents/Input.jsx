@@ -1,12 +1,26 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ContainerInput, Eye, InputStyled, SvgStyledEyeClose, SvgStyledEyeOpen } from './Input.styled';
 import { TYPE_INPUT } from '../../../constants/constants';
 import InputPhone from './InputPhone';
 import { validateEmailData } from '../../../utils/validation';
 
-const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, setUserData, userPassword = '' }) => {
+const Input = ({
+  typeInput = 'text',
+  handleErrorMessage,
+  requiredInput = false,
+  setUserData,
+  userPassword = '',
+  userInfo = {},
+}) => {
   const [inputValue, setInputValue] = useState('');
+
   const [showPassword, setShowPassword] = useState(false);
+  const { email, tel, password, confirmPassword } = TYPE_INPUT;
+  useEffect(() => {
+    if (Object.keys(userInfo).length === 0) {
+      setInputValue('');
+    }
+  }, [userInfo]);
 
   const handleChange = event => {
     const value = event.target.value;
@@ -23,12 +37,12 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
       handleErrorMessage('Please complete this field');
       return;
     }
-    if (typeInput === TYPE_INPUT.confirmPassword && userPassword !== value) handleErrorMessage('Passwords must match');
+    if (typeInput === confirmPassword && userPassword !== value) handleErrorMessage('Passwords must match');
 
-    if ((typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && value.length < 3) {
+    if ((typeInput === confirmPassword || typeInput === password) && value.length < 3) {
       handleErrorMessage('Password must be at least 3 characters');
     }
-    if (typeInput === TYPE_INPUT.email) {
+    if (typeInput === email) {
       const { error } = validateEmailData(value);
       if (error) handleErrorMessage(error.message);
     }
@@ -36,7 +50,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
 
   const handleFocus = event => {
     const value = event.target.value;
-    if (typeInput === TYPE_INPUT.confirmPassword && userPassword === value) handleErrorMessage('');
+    if (typeInput === confirmPassword && userPassword === value) handleErrorMessage('');
   };
 
   const togglePasswordVisibility = () => {
@@ -45,13 +59,13 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
 
   const placeholderInput = useMemo(() => {
     switch (typeInput) {
-      case TYPE_INPUT.email:
+      case email:
         return 'Enter email';
-      case TYPE_INPUT.tel:
+      case tel:
         return '+38(0__) ___ __ __';
-      case TYPE_INPUT.password:
+      case password:
         return 'Password';
-      case TYPE_INPUT.confirmPassword:
+      case confirmPassword:
         return 'Confirm Password';
       default:
         return 'Please enter text';
@@ -59,13 +73,9 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
   }, [typeInput]);
 
   const isPasswordInput =
-    typeInput !== TYPE_INPUT.confirmPassword && typeInput !== TYPE_INPUT.password
-      ? typeInput
-      : showPassword === false
-      ? TYPE_INPUT.password
-      : 'text';
+    typeInput !== confirmPassword && typeInput !== password ? typeInput : showPassword === false ? password : 'text';
 
-  return typeInput !== TYPE_INPUT.tel ? (
+  return typeInput !== tel ? (
     <ContainerInput>
       <InputStyled
         type={isPasswordInput}
@@ -77,7 +87,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
         onBlur={handleBlur}
         onFocus={handleFocus}
       />
-      {(typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && (
+      {(typeInput === confirmPassword || typeInput === password) && (
         <Eye type="button" onClick={togglePasswordVisibility}>
           {!showPassword ? <SvgStyledEyeClose /> : <SvgStyledEyeOpen />}
         </Eye>
@@ -90,6 +100,7 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
       requiredInput={requiredInput}
       handleErrorMessage={handleErrorMessage}
       setUserData={setUserData}
+      userInfo={userInfo}
     />
   );
 };

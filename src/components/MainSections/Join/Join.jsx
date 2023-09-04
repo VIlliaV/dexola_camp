@@ -11,13 +11,16 @@ import { validateData } from '../../../utils/validation';
 
 const Join = ({ numberSection }) => {
   const [userData, setUserData] = useState({});
-  // console.log('🚀 ~ userData:', userData);
+  const { email, tel, password, confirmPassword } = TYPE_INPUT;
 
   const handleSubmit = event => {
     event.preventDefault();
     const { error } = validateData(userData);
 
-    !error ? toast.success(`Enjoy ${userData['email']}`) : toast.error(error.message);
+    !error ? toast.success(`Enjoy ${userData[email]}`) : toast.error(error.message);
+    if (!error) {
+      setUserData({});
+    }
   };
 
   const takeDataFromLabel = (name, value) => {
@@ -28,7 +31,7 @@ const Join = ({ numberSection }) => {
   };
 
   return (
-    <Section>
+    <Section id="Join">
       <Title numberSection={numberSection}> join us</Title>
       <JoinContainer>
         <JoinDescriptionStyled>
@@ -40,14 +43,15 @@ const Join = ({ numberSection }) => {
           <SvgStyled />
         </JoinDescriptionStyled>
         <Form onSubmit={handleSubmit}>
-          <Label typeInput={TYPE_INPUT.email} requiredInput={true} setUserData={takeDataFromLabel} />
-          <Label typeInput={TYPE_INPUT.tel} requiredInput={true} setUserData={takeDataFromLabel} />
-          <Label typeInput={TYPE_INPUT.password} requiredInput={true} setUserData={takeDataFromLabel} />
+          <Label typeInput={email} requiredInput={true} setUserData={takeDataFromLabel} userInfo={userData} />
+          <Label typeInput={tel} requiredInput={true} setUserData={takeDataFromLabel} userInfo={userData} />
+          <Label typeInput={password} requiredInput={true} setUserData={takeDataFromLabel} userInfo={userData} />
           <Label
-            typeInput={TYPE_INPUT.confirmPassword}
+            typeInput={confirmPassword}
             requiredInput={true}
             setUserData={takeDataFromLabel}
-            userPassword={userData[TYPE_INPUT.password]}
+            userPassword={userData[password]}
+            userInfo={userData}
           />
           <Button typeButton="submit" className="submit_button">
             <SvgStyledLine />

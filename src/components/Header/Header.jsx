@@ -3,13 +3,14 @@ import HeadContainer from '../HeadContainer/HeadContainer';
 import Logo from '../Logo/Logo';
 import { HeaderContainer } from './Header.styled';
 import { SvgStyled } from './Header.styled';
+import { scrollToElementById } from '../../utils/smoothScroll';
 
 const Header = () => {
   return (
     <HeaderContainer>
       <HeadContainer>
         <Logo />
-        <Button>
+        <Button onClick={() => scrollToElementById('Join')}>
           <SvgStyled />
           Join Now
         </Button>

@@ -22,6 +22,7 @@ import { useEffect, useRef } from 'react';
 import { SvgStyled } from '../../Header/Header.styled';
 import { formatNumberWithLeadingZero } from '@/utils/formating';
 import { media } from '@/styles/media';
+import { scrollToElementById } from '../../../utils/smoothScroll';
 
 const Features = ({ numberSection }) => {
   const sequenceNumber = useRef(0);
@@ -62,7 +63,7 @@ const Features = ({ numberSection }) => {
             <p>
               The StarRunner Token the exclusive crypto currency fueling the adventure of the Play-to-Earn sensation.
             </p>
-            <Button>
+            <Button onClick={() => scrollToElementById('Join')}>
               <SvgStyled />
               discover now
             </Button>
@@ -86,7 +87,7 @@ const Features = ({ numberSection }) => {
               Join a thriving community <br />
               of stakers, united by their passion for exploration, strategy, and gaming.
             </p>
-            <Button>
+            <Button onClick={() => scrollToElementById('Join')}>
               <SvgStyled />
               discover now
             </Button>
@@ -110,7 +111,7 @@ const Features = ({ numberSection }) => {
               Every StarRunner NFT tells <br />a story – YOUR story. This NFT encapsulates the essence of your journey
               like never before.
             </p>
-            <Button>
+            <Button onClick={() => scrollToElementById('Join')}>
               <SvgStyled />
               discover now
             </Button>

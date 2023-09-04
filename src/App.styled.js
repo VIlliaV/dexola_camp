@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   & main {
     flex: 1;
-    margin-top: 57px;
+    margin-top: 59px;
     @media ${media.tablet} {
       margin-top: 87px;
     }

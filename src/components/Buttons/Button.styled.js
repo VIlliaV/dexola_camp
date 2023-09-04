@@ -22,7 +22,8 @@ export const ButtonStyle = styled.button`
   @media ${media.tablet} {
     padding: 12px 66.44px;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--button_hover);
   }
 `;

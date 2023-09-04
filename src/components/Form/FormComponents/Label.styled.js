@@ -16,7 +16,8 @@ export const LabelStyled = styled.label`
       line-height: 1.5;
       letter-spacing: 0.02em;
     }
-    &:hover {
+    &:hover,
+    &:focus-within {
       border-color: var(--accent);
     }
   }

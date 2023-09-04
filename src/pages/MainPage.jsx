@@ -4,6 +4,7 @@ import Features from '../components/MainSections/Features/Features';
 import HeroSection from '../components/MainSections/HeroSection/HeroSection';
 import Join from '../components/MainSections/Join/Join';
 import Top from '../components/MainSections/Top/Top';
+import { toast } from 'react-hot-toast';
 
 const MainPage = () => {
   const [nftData, setNftData] = useState([]);
@@ -15,7 +16,7 @@ const MainPage = () => {
         const data = await fetchData();
         setNftData(data);
       } catch (error) {
-        console.log(error);
+        toast.error(error.message);
       }
     };
 
