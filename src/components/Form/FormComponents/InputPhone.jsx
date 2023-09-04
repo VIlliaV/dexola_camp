@@ -16,7 +16,7 @@ const InputPhone = ({ placeholderInput, requiredInput = false, typeInput, handle
       setUserData(typeInput, '');
     } else if (!isValidPhoneNumber(inputValue)) {
       handleErrorMessage('The phone number is not valid.');
-      setUserData(typeInput, '');
+      setUserData(typeInput, 'wrong');
     } else setUserData(typeInput, inputValue);
   };
 
@@ -25,7 +25,7 @@ const InputPhone = ({ placeholderInput, requiredInput = false, typeInput, handle
       placeholder={placeholderInput}
       value={inputValue}
       onChange={handleChange}
-      type={typeInput}
+      autocomplete="off"
       defaultCountry="UA"
       international
       countryCallingCodeEditable={false}

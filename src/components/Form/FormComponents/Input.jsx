@@ -61,7 +61,8 @@ const Input = ({ typeInput = 'text', handleErrorMessage, requiredInput = false, 
         value={inputValue}
         onChange={handleChange}
         onBlur={handleBlur}
-        autoComplete="off"
+        // autoComplete="off"
+        // defaultValue="Значення 1"
       />
       {(typeInput === TYPE_INPUT.confirmPassword || typeInput === TYPE_INPUT.password) && (
         <Eye type="button" onClick={togglePasswordVisibility}>

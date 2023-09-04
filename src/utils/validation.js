@@ -11,10 +11,15 @@ const validationSchema = Joi.object({
       'any.required': `missing required 'email' field`,
       'string.empty': `'email' cannot be an empty field`,
     }),
-  tel: Joi.string().min(6).required().messages({
-    'any.required': `missing required 'phone' field`,
-    'string.empty': `'phone' cannot be an empty field`,
-  }),
+  tel: Joi.string()
+    // .min(6)
+    .required()
+    .pattern(/^[0-9()+-]+$/)
+    .messages({
+      'any.required': `missing required 'phone' field`,
+      'string.empty': `'phone' cannot be an empty field`,
+      'string.pattern.base': `The phone number is not valid.`,
+    }),
   password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),
 
   confirm_password: Joi.ref('password'),
