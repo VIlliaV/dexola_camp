@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { TYPE_INPUT } from '../../../constants/constants';
 import Button from '../../Buttons/Button';
 import Form from '../../Form/Form';
@@ -12,21 +12,11 @@ import { validateData } from '../../../utils/validation';
 const Join = ({ numberSection }) => {
   const [userData, setUserData] = useState({});
 
-  // const isValid = useMemo(() => {
-  //   if (Object.keys(userData).length === 0) return true;
-  //   return Object.values(userData).some(value => value === '');
-  // }, [userData]);
-
   const handleSubmit = event => {
-    // console.log('🚀 ~ event:', event);
     event.preventDefault();
     const { error } = validateData(userData);
-    // console.table('🚀 ~ event:', event.target.form);
-    const form = event.target.form;
-    console.log('🚀 ~ form:', event);
 
-    !error ? toast.success(userData['email']) : toast.error(error.message);
-    // console.log('object :>> ', userData);
+    !error ? toast.success(`Enjoy ${userData['email']}`) : toast.error(error.message);
   };
 
   const takeDataFromLabel = (name, value) => {
