@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { media } from '@/styles/media';
 
 export const SectionStyled = styled.section`
-  /* display: flex;
-  justify-content: center; */
   position: relative;
   overflow: hidden;
   margin-bottom: 41px;

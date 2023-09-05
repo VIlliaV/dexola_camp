@@ -48,9 +48,6 @@ export const ImageSlider = styled.div`
   & .slider-image.active {
     opacity: 1;
   }
-  /* & .slider-image:not(.active) {
-    z-index: -1;
-  } */
 `;
 
 export const CutContainer = styled.div`

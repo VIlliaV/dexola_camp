@@ -70,7 +70,7 @@ const Input = ({
       default:
         return 'Please enter text';
     }
-  }, [typeInput]);
+  }, [confirmPassword, email, password, tel, typeInput]);
 
   const isPasswordInput =
     typeInput !== confirmPassword && typeInput !== password ? typeInput : showPassword === false ? password : 'text';
