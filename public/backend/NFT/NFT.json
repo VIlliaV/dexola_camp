@@ -2,7 +2,7 @@
   {
     "name": "",
     "src": {
-      "tabj": "/images/NFTs/1.jpg",
+      "def": "/images/NFTs/1.jpg",
       "mob": "/images/NFTs/1_mob.webp",
       "tab": "/images/NFTs/1_tab.webp",
       "desk": "/images/NFTs/1_desk.webp",
@@ -21,7 +21,7 @@
   {
     "name": "Common Potion",
     "src": {
-      "tabj": "/images/NFTs/2.jpg",
+      "def": "/images/NFTs/2.jpg",
       "mob": "/images/NFTs/2_mob.webp",
       "tab": "/images/NFTs/2_tab.webp",
       "desk": "/images/NFTs/2_desk.webp",
@@ -30,7 +30,7 @@
     "avatar": {
       "max": "/images/NFTs/avatar/2@2x.webp",
       "min": "/images/NFTs/avatar/2.webp",
-      "def": "/images/NFTs/avatar/2.png"
+      "def": "/images/NFTs/avatar/2.jpg"
     },
     "rarity_level": "Heroic",
     "total_games": 87,
@@ -40,7 +40,7 @@
   {
     "name": "Epic Warrior",
     "src": {
-      "tabj": "/images/NFTs/3.jpg",
+      "def": "/images/NFTs/3.jpg",
       "mob": "/images/NFTs/3_mob.webp",
       "tab": "/images/NFTs/3_tab.webp",
       "desk": "/images/NFTs/3_desk.webp",
@@ -49,7 +49,7 @@
     "avatar": {
       "max": "/images/NFTs/avatar/3@2x.webp",
       "min": "/images/NFTs/avatar/3.webp",
-      "def": "/images/NFTs/avatar/3.png"
+      "def": "/images/NFTs/avatar/3.jpg"
     },
     "rarity_level": "Rare",
     "total_games": 134,
@@ -59,7 +59,7 @@
   {
     "name": "",
     "src": {
-      "tabj": "/images/NFTs/4.jpg",
+      "def": "/images/NFTs/4.jpg",
       "mob": "/images/NFTs/4_mob.webp",
       "tab": "/images/NFTs/4_tab.webp",
       "desk": "/images/NFTs/4_desk.webp",
@@ -78,7 +78,7 @@
   {
     "name": "Mystic Spellbook",
     "src": {
-      "tabj": "/images/NFTs/5.jpg",
+      "def": "/images/NFTs/5.jpg",
       "mob": "/images/NFTs/5_mob.webp",
       "tab": "/images/NFTs/5_tab.webp",
       "desk": "/images/NFTs/5_desk.webp",
@@ -87,7 +87,7 @@
     "avatar": {
       "max": "/images/NFTs/avatar/5@2x.webp",
       "min": "/images/NFTs/avatar/5.webp",
-      "def": "/images/NFTs/avatar/5.png"
+      "def": "/images/NFTs/avatar/5.jpg"
     },
     "rarity_level": "Common",
     "total_games": 133,
@@ -97,7 +97,7 @@
   {
     "name": "",
     "src": {
-      "tabj": "/images/NFTs/6.jpg",
+      "def": "/images/NFTs/6.jpg",
       "mob": "/images/NFTs/6_mob.webp",
       "tab": "/images/NFTs/6_tab.webp",
       "desk": "/images/NFTs/6_desk.webp",
@@ -116,7 +116,7 @@
   {
     "name": "Heroic Blade",
     "src": {
-      "tabj": "/images/NFTs/7.jpg",
+      "def": "/images/NFTs/7.jpg",
       "mob": "/images/NFTs/7_mob.webp",
       "tab": "/images/NFTs/7_tab.webp",
       "desk": "/images/NFTs/7_desk.webp",
@@ -125,7 +125,7 @@
     "avatar": {
       "max": "/images/NFTs/avatar/7@2x.webp",
       "min": "/images/NFTs/avatar/7.webp",
-      "def": "/images/NFTs/avatar/7.png"
+      "def": "/images/NFTs/avatar/7.jpg"
     },
     "rarity_level": "Epic",
     "total_games": 56,
@@ -135,7 +135,7 @@
   {
     "name": "",
     "src": {
-      "tabj": "/images/NFTs/8.jpg",
+      "def": "/images/NFTs/8.jpg",
       "mob": "/images/NFTs/8_mob.webp",
       "tab": "/images/NFTs/8_tab.webp",
       "desk": "/images/NFTs/8_desk.webp",
@@ -154,7 +154,7 @@
   {
     "name": "",
     "src": {
-      "tabj": "/images/NFTs/9.jpg",
+      "def": "/images/NFTs/9.jpg",
       "mob": "/images/NFTs/9_mob.webp",
       "tab": "/images/NFTs/9_tab.webp",
       "desk": "/images/NFTs/9_desk.webp",
@@ -173,7 +173,7 @@
   {
     "name": "Legendary Artifact",
     "src": {
-      "tabj": "/images/NFTs/10.jpg",
+      "def": "/images/NFTs/10.jpg",
       "mob": "/images/NFTs/10_mob.webp",
       "tab": "/images/NFTs/10_tab.webp",
       "desk": "/images/NFTs/10_desk.webp",
@@ -182,7 +182,7 @@
     "avatar": {
       "max": "/images/NFTs/avatar/10@2x.webp",
       "min": "/images/NFTs/avatar/10.webp",
-      "def": "/images/NFTs/avatar/10.png"
+      "def": "/images/NFTs/avatar/10.jpg"
     },
     "rarity_level": "Legendary",
     "total_games": 189,

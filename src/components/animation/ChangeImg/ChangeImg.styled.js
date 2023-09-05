@@ -26,6 +26,7 @@ export const ImageSlider = styled.div`
       height: auto;
       overflow: hidden;
       border: 1px solid var(--accent);
+      transform: translateX(0);
     }
   }
 
@@ -53,10 +54,10 @@ export const ImageSlider = styled.div`
 export const CutContainer = styled.div`
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
 
   & img {
     width: 100%;
     height: 100%;
-    transform: translateX(-50%);
   }
 `;
