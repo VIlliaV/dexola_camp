@@ -28,6 +28,7 @@ const ChangeImg = ({ nftData = [], initial = 0, step = 1, period = 3000 }) => {
               src={item.src.def}
               alt={item.name}
               className={`slider-image ${index === activeImage ? 'active' : ''}`}
+              loading="lazy"
             />
           </picture>
         </CutContainer>

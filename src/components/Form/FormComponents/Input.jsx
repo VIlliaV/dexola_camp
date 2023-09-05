@@ -70,7 +70,8 @@ const Input = ({
       default:
         return 'Please enter text';
     }
-  }, [confirmPassword, email, password, tel, typeInput]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [typeInput]);
 
   const isPasswordInput =
     typeInput !== confirmPassword && typeInput !== password ? typeInput : showPassword === false ? password : 'text';
