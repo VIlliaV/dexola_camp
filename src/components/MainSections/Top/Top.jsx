@@ -1,15 +1,10 @@
-import { useEffect } from 'react';
 import Section from '../../Section/Section';
 import Title from '../../Title/Title';
 import { TableStyle } from './Top.styled';
 import noAvatar from '@/images/plug/no_avatar.png';
 import noAvatar64 from '@/images/plug/no_avatar.webp';
 import noAvatar128 from '@/images/plug/no_avatar@2x.webp';
-const Top = ({ nftData, numberSection }) => {
-  useEffect(() => {
-    if (!nftData.length) return;
-  }, [nftData]);
-
+const Top = ({ nftData = [], numberSection }) => {
   const sortedItems = nftData.slice().sort((a, b) => b.total_games - a.total_games);
 
   return (
